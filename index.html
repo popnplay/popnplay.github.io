@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="facebook-domain-verification" content="njijewli1uv52d9bepvyxjx3ze7fxi" />
-    <title>Contact Us - Mongolian Wilderness Expedition</title>
+    <title>Mongolian Wilderness Expedition</title>
 
     <style>
         * {
@@ -15,61 +15,64 @@
 
         body {
             font-family: Arial, Helvetica, sans-serif;
-            background: #ffffff;
+            background: #ffffff; /* Plain white background */
             color: #222;
             display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            justify-content: center; /* This centers the contact section vertically */
-        }
-
-        footer {
-            background: #111827;
-            color: #e5e7eb;
-            padding: 60px 20px;
-        }
-
-        .footer-inner {
-            max-width: 1100px;
-            margin: 0 auto;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
             text-align: center;
-            font-size: 16px;
-            line-height: 1.7;
         }
 
-        .footer-inner h2 {
-            font-size: 32px;
+        .contact-container {
+            max-width: 400px;
+            padding: 20px;
+        }
+
+        .company-icon {
+            width: 80px; /* Adjust size as needed */
+            height: 80px;
             margin-bottom: 20px;
-            color: #fff;
+            object-fit: contain;
         }
 
-        .footer-inner a {
-            color: #9ca3af;
-            text-decoration: none;
+        .company-name {
             font-weight: bold;
+            font-size: 18px;
+            display: block;
+            margin-bottom: 8px;
         }
 
-        .footer-inner a:hover {
+        a {
+            color: #444;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        a:hover {
             text-decoration: underline;
+        }
+
+        .privacy-link {
+            margin-top: 30px;
+            display: block;
+            color: #999;
+            font-size: 12px;
         }
     </style>
 </head>
 
 <body>
 
-<footer id="contact">
-    <div class="footer-inner">
-        <h2>Contact Us</h2>
-        <p>We'd love to hear from you.</p>
-        <p style="margin-top: 10px;">
-            <strong>Mongolian Wilderness Expedition</strong><br>
-            <a href="mailto:hello@popnplay.games">hello@popnplay.games</a>
-        </p>
-        <p style="margin-top: 24px;">
-            <a href="privacy.html">Privacy Policy</a>
-        </p>
-    </div>
-</footer>
+<div class="contact-container">
+    <img src="icon.png" alt="Icon" class="company-icon">
+
+    <span class="company-name">Mongolian Wilderness Expedition</span>
+    
+    <a href="mailto:hello@popnplay.games">hello@popnplay.games</a>
+
+    <a href="privacy.html" class="privacy-link">Privacy Policy</a>
+</div>
 
 </body>
 </html>
