@@ -19,28 +19,31 @@
             color: #000000;
             display: flex;
             height: 100vh;
-            align-items: center;
-            justify-content: center;
+            justify-content: center; /* Keeps it centered horizontally */
+            
+            /* --- MOVED UP SECTION --- */
+            align-items: flex-start; /* Aligns to the top instead of center */
+            padding-top: 15vh; /* This pushes it 15% down from the top. Change this number to move it up or down. */
         }
 
         .contact-container {
-            display: flex; /* Enables side-by-side layout */
-            flex-direction: row; /* Icon and Text sit in a row */
-            align-items: center; /* Centers text vertically relative to the icon */
-            gap: 24px; /* Space between the icon and the text block */
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 24px;
             padding: 20px;
         }
 
         .company-icon {
-            width: 120px; /* Reduced size to look better next to text */
+            width: 120px; 
             height: 120px;
             display: block;
         }
 
         .text-group {
             display: flex;
-            flex-direction: column; /* Keeps the name and email stacked */
-            align-items: flex-start; /* Aligns text to the left within its group */
+            flex-direction: column;
+            align-items: flex-start;
         }
 
         .company-name {
@@ -68,6 +71,10 @@
             color: #8e8e93;
             font-size: 12px;
             text-decoration: none;
+        }
+
+        .privacy-link:hover {
+            color: #000;
         }
     </style>
 </head>
