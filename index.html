@@ -16,63 +16,60 @@
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             background: #ffffff; 
-            color: #1a1a1a;
+            color: #000000; /* Global text color to black */
             display: flex;
             height: 100vh;
             align-items: center;
             justify-content: center;
-            /* text-align: center; <-- REMOVED THIS LINE */
         }
 
         .contact-container {
-            width: 100%; /* Take full width of parent */
-            max-width: 512px; /* But don't exceed your logo width */
+            width: 100%;
+            max-width: 256px; /* Matches your new 256px icon size */
             padding: 20px;
-            display: flex; /* Turn the container into a flex column */
+            display: flex;
             flex-direction: column;
-            align-items: flex-start; /* Align all children to the left */
+            align-items: flex-start;
         }
 
         .company-icon {
-            width: 100%; /* Scale up to the max-width (512px) */
-            height: auto; /* Let height adjust automatically */
-            max-width: 256px; /* Ensure it matches the container max */
-            margin-bottom: 24px;
-            /* border-radius: 20%; <-- REMOVED: This was cutting the logo */
-            /* object-fit: cover; <-- REMOVED: This was distorting the logo */
+            width: 100%;
+            height: auto;
+            max-width: 256px; 
+            margin-bottom: 20px;
+            display: block;
         }
 
         .company-name {
             font-weight: 700;
-            font-size: 24px; /* Made slightly larger */
+            font-size: 22px;
             display: block;
-            margin-bottom: 8px;
+            margin-bottom: 4px;
             letter-spacing: -0.5px;
-            /* Left alignment is inherited */
         }
 
         .email-link {
-            color: #007aff;
+            color: #000000; /* Set email text to black */
             text-decoration: none;
             font-size: 16px;
-            /* Left alignment is inherited */
+            opacity: 0.85; /* Makes it slightly softer than the bold name */
         }
 
         .email-link:hover {
             text-decoration: underline;
+            opacity: 1;
         }
 
         .privacy-link {
-            margin-top: 60px; /* Increased top margin for more separation */
+            margin-top: 40px;
             display: block;
             color: #8e8e93;
-            font-size: 13px;
+            font-size: 12px;
             text-decoration: none;
-            /* Left alignment is inherited */
         }
 
         .privacy-link:hover {
-            color: #444;
+            color: #000;
         }
     </style>
 </head>
