@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="facebook-domain-verification" content="njijewli1uv52d9bepvyxjx3ze7fxi" />
-    <title>Mongolian Wilderness Expedition</title>
+    <title>PopNPlay</title>
 
     <style>
         * {
@@ -14,9 +14,9 @@
         }
 
         body {
-            font-family: Arial, Helvetica, sans-serif;
-            background: #ffffff; /* Plain white background */
-            color: #222;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: #ffffff; 
+            color: #1a1a1a;
             display: flex;
             height: 100vh;
             align-items: center;
@@ -30,34 +30,41 @@
         }
 
         .company-icon {
-            width: 80px; /* Adjust size as needed */
-            height: 80px;
-            margin-bottom: 20px;
-            object-fit: contain;
+            width: 120px; /* Adjust size if needed */
+            height: 120px;
+            margin-bottom: 24px;
+            border-radius: 24px; /* Gives it a mobile app icon look */
+            object-fit: cover;
         }
 
         .company-name {
-            font-weight: bold;
-            font-size: 18px;
+            font-weight: 700;
+            font-size: 22px;
             display: block;
             margin-bottom: 8px;
+            letter-spacing: -0.5px;
         }
 
-        a {
-            color: #444;
+        .email-link {
+            color: #007aff; /* Standard link blue */
             text-decoration: none;
-            font-size: 14px;
+            font-size: 16px;
         }
 
-        a:hover {
+        .email-link:hover {
             text-decoration: underline;
         }
 
         .privacy-link {
-            margin-top: 30px;
+            margin-top: 50px;
             display: block;
-            color: #999;
-            font-size: 12px;
+            color: #8e8e93;
+            font-size: 13px;
+            text-decoration: none;
+        }
+
+        .privacy-link:hover {
+            color: #444;
         }
     </style>
 </head>
@@ -65,11 +72,13 @@
 <body>
 
 <div class="contact-container">
-    <img src="icon.png" alt="Icon" class="company-icon">
+    <img src="PopNPlay_Icon.png" alt="PopNPlay Icon" class="company-icon">
 
     <span class="company-name">Mongolian Wilderness Expedition</span>
     
-    <a href="mailto:hello@popnplay.games">hello@popnplay.games</a>
+    <p>
+        <a href="mailto:hello@popnplay.games" class="email-link">hello@popnplay.games</a>
+    </p>
 
     <a href="privacy.html" class="privacy-link">Privacy Policy</a>
 </div>
