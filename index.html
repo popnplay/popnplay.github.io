@@ -21,34 +21,41 @@
             height: 100vh;
             align-items: center;
             justify-content: center;
-            text-align: center;
+            /* text-align: center; <-- REMOVED THIS LINE */
         }
 
         .contact-container {
-            max-width: 400px;
+            width: 100%; /* Take full width of parent */
+            max-width: 512px; /* But don't exceed your logo width */
             padding: 20px;
+            display: flex; /* Turn the container into a flex column */
+            flex-direction: column;
+            align-items: flex-start; /* Align all children to the left */
         }
 
         .company-icon {
-    width: 120px;   /* Change this to 150px if you want it bigger */
-    height: 120px;  /* Keep this the same as width for a perfect square */
-    margin-bottom: 24px;
-    border-radius: 20%; /* This creates the rounded 'App Store' look */
-    object-fit: cover;
-}
+            width: 100%; /* Scale up to the max-width (512px) */
+            height: auto; /* Let height adjust automatically */
+            max-width: 512px; /* Ensure it matches the container max */
+            margin-bottom: 24px;
+            /* border-radius: 20%; <-- REMOVED: This was cutting the logo */
+            /* object-fit: cover; <-- REMOVED: This was distorting the logo */
+        }
 
         .company-name {
             font-weight: 700;
-            font-size: 22px;
+            font-size: 24px; /* Made slightly larger */
             display: block;
             margin-bottom: 8px;
             letter-spacing: -0.5px;
+            /* Left alignment is inherited */
         }
 
         .email-link {
-            color: #007aff; /* Standard link blue */
+            color: #007aff;
             text-decoration: none;
             font-size: 16px;
+            /* Left alignment is inherited */
         }
 
         .email-link:hover {
@@ -56,11 +63,12 @@
         }
 
         .privacy-link {
-            margin-top: 50px;
+            margin-top: 60px; /* Increased top margin for more separation */
             display: block;
             color: #8e8e93;
             font-size: 13px;
             text-decoration: none;
+            /* Left alignment is inherited */
         }
 
         .privacy-link:hover {
